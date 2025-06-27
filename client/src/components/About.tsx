@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import NeuralNetworkViz from "./NeuralNetworkViz";
 
 export default function About() {
   const containerVariants = {
@@ -40,21 +39,6 @@ export default function About() {
             A passionate Electronics & Telecommunications Engineering student with expertise in AI/ML development, 
             currently working as an AI Intern at Expleo Group.
           </p>
-        </motion.div>
-
-        {/* Neural Network Visualization */}
-        <motion.div
-          className="mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">AI Neural Network in Action</h3>
-            <p className="text-light-slate/70">Live visualization of deep learning model processing</p>
-          </div>
-          <NeuralNetworkViz />
         </motion.div>
 
         <motion.div 
