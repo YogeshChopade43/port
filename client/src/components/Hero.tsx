@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import professionalPhoto from "@assets/me_1751055150028.jpg";
+import AITypingEffect from "./AITypingEffect";
 
 export default function Hero() {
   return (
@@ -55,14 +56,23 @@ export default function Hero() {
                 <span className="text-light-slate">Yogesh</span><br />
                 <span className="gradient-text">Chopade</span>
               </motion.h1>
-              <motion.p 
-                className="text-xl lg:text-2xl text-light-slate/80"
+              <motion.div
+                className="text-xl lg:text-2xl text-light-slate/80 h-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                AI/ML Developer & Electronics Engineer
-              </motion.p>
+                <AITypingEffect 
+                  texts={[
+                    "AI/ML Developer & Electronics Engineer",
+                    "Building Intelligent Systems",
+                    "Advancing Healthcare with AI",
+                    "Computer Vision Specialist"
+                  ]}
+                  speed={80}
+                  delay={2500}
+                />
+              </motion.div>
             </div>
             
             <motion.p 
